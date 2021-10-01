@@ -16,9 +16,9 @@ export default function Home({ history }) {
   function handleClick(param) {
     setAnswers(param)
     if(param['person']==='technical'){
-      history.push('/docs/use-cases/customization')
+      history.push(siteConfig.baseUrl + 'docs/use-cases/customization')
     } else {
-      history.push('/docs/use-cases/integration')
+      history.push(siteConfig.baseUrl + 'docs/use-cases/integration')
     }
   }
 
